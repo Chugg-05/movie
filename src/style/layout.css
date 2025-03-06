@@ -1,0 +1,204 @@
+/* -------------------------------------- HEADER --------------------------------------*/
+
+.container-header {
+    width: 75%;
+    background-color: #080808;
+    align-items: center;
+    padding: 0 8px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header-logo {
+    align-content: center;
+  }
+  .header-logo img {
+    width: 80px;
+    cursor: pointer;
+  }
+  
+  .header-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .header-list__items {
+    margin-left: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    line-height: 40px;
+    user-select: none;
+    white-space: nowrap;
+  }
+  
+  .header-list__items:hover {
+    color: #f28705;
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+    transform: scale(1.1);
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dropdown-list {
+    margin-left: 15px;
+    display: none;
+    position: absolute;
+    z-index: 2;
+    white-space: nowrap;
+    padding: 25px 8px 8px 8px;
+    background-color: #080808;
+    border-radius: 5px;
+  }
+  
+  .dropdown:hover .dropdown-list {
+    display: block;
+  }
+  
+  .dropdown-list__items {
+    line-height: 27px;
+    user-select: none;
+  }
+  
+  .dropdown-list__items:hover {
+    color: #f28705;
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+    transform: scale(1.1);
+  }
+  
+  .search-bar {
+    background-color: #333;
+    border: 1px solid #333;
+    border-radius: 25px;
+    padding: 8px 5px;
+  }
+  
+  .form-search {
+    width: 90%;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    border-radius: 25px;
+    color: #fff;
+    background-color: #333;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .movieGenre,
+  .nation,
+  .year {
+    margin-left: 15px;
+  }
+  
+  /* -------------------------------------- FOOTER --------------------------------------*/
+  .container-footer {
+    width: 75%;
+    color: #fff;
+    background-color: #0f0f0f;
+    padding: 8px 0 0 0;
+  }
+  
+  .footer-category {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  
+  .footer-title {
+    color: #f28705;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .footer-list {
+    line-height: 25px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .footer-list__items:hover {
+    color: #f28705;
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+    transform: scale(1.1);
+  }
+  
+  .footer-logo {
+    margin: 0 0 5% 3%;
+  }
+  .footer-logo img {
+    width: 50%;
+    margin-top: 5px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .footer-contact {
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .footer-contact__content {
+    line-height: 25px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .footer-contact__content:hover {
+    color: #f28705;
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+    transform: scale(1.03);
+  }
+  
+  .footer-content {
+    width: 85%;
+    margin-left: 3%;
+    text-align: justify;
+  }
+  
+  .footer-about_us {
+    width: 98%;
+    text-align: center;
+    color: #fff;
+    line-height: 60px;
+    font-size: 22px;
+    justify-content: center;
+    cursor: pointer;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    margin-top: 3%;
+  }
+  
+  .footer-about_us .router-custom :hover {
+    color: #f28705;
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+    transform: scale(1.1);
+  }
+  
+  .copyright {
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    line-height: 70px;
+  }
+  
