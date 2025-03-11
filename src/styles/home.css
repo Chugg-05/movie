@@ -1,0 +1,238 @@
+.main-title {
+    width: 100%;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    color: #f28705;
+  }
+  
+  .slide-recommendFilm {
+    width: 100%;
+    height: auto;
+    margin-bottom: 70px;
+  }
+  
+  .recommendFilm-list {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+    transition: transform 1s ease;
+  }
+  
+  .recommendFilm-list__items {
+    flex: 0 0 27%;
+    scroll-snap-align: start;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .prev,
+  .next {
+    font-size: 25px;
+    padding: 10px 10px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    user-select: none;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .next:hover,
+  .prev:hover {
+    color: #f28705;
+  }
+  
+  .main-title_bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn-detail {
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    background-color: #666;
+    border: 1px solid #333;
+    border-radius: 10px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+  }
+  
+  .btn-detail:hover {
+    color: #f28705;
+  }
+  
+  .movie-content {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .movie-list {
+    margin-top: 10px;
+  }
+  
+  .movie-list_1 {
+    flex: 0 0 39.7%;
+    max-width: 39.7%;
+    margin-top: 10px;
+  }
+  .movie-list_2 {
+    display: flex;
+    flex: 0 0 59.7%;
+    max-width: 59.7%;
+    margin-top: 10px;
+  }
+  .movie-list_3 {
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 10px 0 30px 0;
+  }
+  
+  .movie-list__main_items {
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 13px;
+  }
+  
+  .movie-list__items {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .movie-card {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 8px;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 0;
+  }
+  
+  .card-label {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    z-index: 2;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image:hover {
+    transform: scale(1.2);
+  }
+  
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 8px;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 165, 0, 0.9);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .movie-card:hover .play-button {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .play-button::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 15px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transform: translateX(2px);
+  }
+  
+  .main-movie_content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .main-movie_content .router-custom {
+    flex: 0 0 32.7%;
+    max-width: 32.7%;
+  }
+  .main-movie_content .router-custom .movie-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .movie-list_3 .main-movie_content .router-custom {
+    flex: 0 0 19.6%;
+    max-width: 19.6%;
+  }
+  .movie-list_3 .main-movie_content .router-custom .movie-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .movie_list__base {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .movie_list__base .router-custom {
+    flex: 0 0 49.3%;
+    max-width: 49.3%;
+  }

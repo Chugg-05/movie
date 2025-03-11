@@ -1,0 +1,832 @@
+.header-menu {
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .header-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.3s;
+  }
+  
+  .header-mobile__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: #1f1f1f;
+    z-index: 2;
+    text-align: left;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition:
+      transform linear 0.3s,
+      opacity linear 0.3s;
+  }
+  
+  .header-mobile-list {
+    list-style: none;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #333;
+  }
+  
+  .header-mobile-list__items {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    line-height: 55px;
+    border: 0.5px solid #666;
+    padding-left: 15px;
+  }
+  
+  .header-mobile-list__items:hover {
+    color: #f28705;
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+    background-color: rgba(102, 102, 102, 0.5);
+  }
+  
+  .close_menu {
+    font-size: 40px;
+    color: #666;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+  }
+  
+  .header-menu_input {
+    display: none;
+  }
+  
+  .header-menu_input:checked ~ .header-overlay {
+    display: block;
+  }
+  
+  .header-menu_input:checked ~ .header-mobile__content {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  
+  .nav-mobile {
+    background-color: #080808;
+  }
+  
+  .row .nav-mobile .header-mobile-logo {
+    justify-content: center;
+  }
+  
+  .header-mobile-logo img {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .dropdown-mobile {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .dropdown-mobile-list {
+    display: none;
+    z-index: 1;
+    white-space: nowrap;
+    padding: 0 8px;
+    background-color: #080808;
+  }
+  
+  .dropdown-mobile:hover .dropdown-mobile-list {
+    display: block;
+  }
+  
+  .dropdown-mobile-list__items {
+    line-height: 30px;
+    margin-left: 15px;
+    user-select: none;
+  }
+  
+  .dropdown-mobile-list__items:hover {
+    color: #f28705;
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+  }
+  
+  .footer-movie {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /*--------------------------------- Mobile ---------------------------------*/
+  /* Mini phone (ip5) */
+  @media (min-width: 20em) and (max-width: 25.5625em) {
+    .header-menu {
+      display: block;
+    }
+    .container-header__content {
+      display: none;
+    }
+  
+    .container-header,
+    .container-footer {
+      width: 100%;
+      padding: 0 1px;
+    }
+  
+    .container-main {
+      width: 99%;
+    }
+  
+    .search-bar {
+      width: 55%;
+    }
+  
+    .close_menu {
+      top: 1px;
+      right: 1px;
+    }
+    .footer-contact {
+      width: 100%;
+    }
+  
+    .movie-list_1,
+    .movie-list_2 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-top: 0;
+    }
+  
+    .card-label {
+      top: 3px;
+      left: 3px;
+      padding: 5px;
+      font-size: 12px;
+    }
+  
+    .container-footer,
+    .footer-category,
+    .footer-movie {
+      display: block;
+    }
+  
+    .footer-category .l-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .footer-category .l-8 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .footer-category .l-8 .l-5 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .footer-category .l-8 .l-7 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .footer-content,
+    .footer-introduce,
+    .footer-movie {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .footer-movie {
+      margin-top: 8%;
+    }
+  
+    .footer-contact {
+      margin-top: 8%;
+    }
+  
+    .footer-about_us {
+      width: 100%;
+    }
+    .footer-about_us .l-1 {
+      flex: 0 0 16.66667%;
+      max-width: 16.66667%;
+    }
+  
+    .btn-detail {
+      width: 125px;
+    }
+    .main-title {
+      font-size: 20px;
+    }
+  
+    .movie-content {
+      display: block;
+    }
+  
+    .main-movie_content .router-custom {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .movie-list__main_items,
+    .movie-card {
+      margin-bottom: 7px;
+    }
+    .movie-list_3 .main-movie_content .router-custom {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .movie_list__base {
+      display: block;
+    }
+  
+    .movie_list__base .router-custom {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .copyright {
+      line-height: normal;
+    }
+  
+    .recommendFilm-list__items {
+      flex: 0 0 85%;
+    }
+  
+    .nav_seemore {
+      display: block;
+    }
+  
+    .filter-group {
+      display: block;
+    }
+    .filter {
+      margin: 5px 5px 0 0;
+    }
+  
+    .btn-filter {
+      margin: 5px 1px;
+    }
+  
+    .seemore-introduce {
+      padding: 8px 2px;
+      margin: 10px 0;
+    }
+  
+    .path {
+      padding: 5px 2px;
+      font-size: 14px;
+    }
+  
+    .page-content {
+      padding: 5px;
+      margin: 10px 0;
+    }
+  
+    .next-page__list {
+      width: 75%;
+    }
+  
+    .container-watch {
+      width: 99%;
+    }
+    .for-you_list__items {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .mini-card {
+      width: 100%;
+      bottom: 3px;
+      left: 3px;
+    }
+    .mini-content {
+      width: 100%;
+    }
+  
+    .mini-content h1 {
+      font-size: 22px;
+    }
+    .mini-content p {
+      margin: 3px 0;
+      font-size: 14px;
+    }
+  
+    .btn-trailer,
+    .btn-watch {
+      padding: 8px 10px;
+    }
+  
+    .epsode-title {
+      font-size: 15px;
+    }
+  
+    .watch-overlay {
+      display: none;
+    }
+  
+    .mini-card img {
+      display: none;
+    }
+    .epsode-list_items {
+      gap: 7px;
+    }
+    .movie-detail {
+      display: block;
+    }
+  
+    .movie-detail_col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .btn-play_watch {
+      display: none;
+    }
+  
+    .vote {
+      gap: 2px;
+      font-size: 14px;
+    }
+    .likes {
+      margin-left: 2px;
+    }
+    .h_comment {
+      font-size: 14px;
+    }
+  
+    .count_comment {
+      align-content: center;
+    }
+  
+    .episode-list {
+      padding: 10px;
+    }
+  
+    .avt_fb {
+      width: 20%;
+      height: 65px;
+    }
+  
+    .form-cmt {
+      width: 79%;
+    }
+  
+    .txa_cmt {
+      width: 95%;
+      height: 60px;
+    }
+  }
+  
+  @media (min-width: 25.625em) and (max-width: 46.1875em) {
+    .header-menu {
+      display: block;
+    }
+    .container-header__content {
+      display: none;
+    }
+  
+    .container-header,
+    .container-footer {
+      width: 100%;
+      padding: 0 1px;
+    }
+  
+    .container-main {
+      width: 99%;
+    }
+  
+    .search-bar {
+      width: 60%;
+    }
+  
+    .close_menu {
+      top: 2px;
+      right: 2px;
+    }
+    .footer-contact {
+      width: 100%;
+    }
+  
+    .movie-list_1,
+    .movie-list_2 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-top: 0;
+    }
+  
+    .card-label {
+      top: 3px;
+      left: 3px;
+      padding: 5px;
+      font-size: 12px;
+    }
+  
+    .container-footer,
+    .footer-category,
+    .footer-movie {
+      display: block;
+    }
+  
+    .footer-category .l-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .footer-category .l-8 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .footer-category .l-8 .l-5 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .footer-category .l-8 .l-7 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .footer-content,
+    .footer-introduce,
+    .footer-movie {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .footer-movie {
+      margin-top: 8%;
+    }
+  
+    .footer-contact {
+      margin-top: 8%;
+    }
+  
+    .footer-about_us {
+      width: 100%;
+    }
+    .footer-about_us .l-1 {
+      flex: 0 0 16.66667%;
+      max-width: 16.66667%;
+    }
+  
+    .btn-detail {
+      width: 125px;
+    }
+    .main-title {
+      font-size: 20px;
+    }
+  
+    .movie-content {
+      display: block;
+    }
+  
+    .main-movie_content .router-custom {
+      flex: 0 0 49%;
+      max-width: 49%;
+    }
+  
+    .movie-list__main_items,
+    .movie-card {
+      margin-bottom: 10px;
+    }
+    .movie-list_3 .main-movie_content .router-custom {
+      flex: 0 0 49.3%;
+      max-width: 49.3%;
+    }
+    .recommendFilm-list__items {
+      flex: 0 0 70%;
+    }
+  
+    .nav_seemore {
+      display: block;
+    }
+  
+    .filter-group {
+      display: block;
+    }
+  
+    .filter {
+      margin: 5px 5px 0 0;
+    }
+  
+    .btn-filter {
+      margin: 5px 1px;
+    }
+  
+    .seemore-introduce {
+      padding: 8px 2px;
+    }
+  
+    .path {
+      padding: 5px 2px;
+      font-size: 14px;
+    }
+  
+    .page-content {
+      padding: 5px;
+      margin: 10px 0;
+    }
+  
+    .next-page__list {
+      width: 75%;
+    }
+  
+    .container-watch {
+      width: 95%;
+    }
+    .for-you_list__items {
+      flex: 0 0 49.5%;
+      max-width: 49.5%;
+    }
+  
+    .mini-card {
+      width: 100%;
+    }
+    .mini-content {
+      width: 100%;
+    }
+  
+    .watch-overlay {
+      display: none;
+    }
+  
+    .mini-card img {
+      display: none;
+    }
+    .epsode-list_items {
+      gap: 6px;
+    }
+    .movie-detail {
+      display: block;
+    }
+  
+    .movie-detail_col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .btn-play_watch {
+      display: none;
+    }
+    .count_comment {
+      align-content: center;
+    }
+  
+    .avt_fb {
+      width: 15%;
+      height: 65px;
+    }
+  
+    .form-cmt {
+      width: 84%;
+    }
+  
+    .txa_cmt {
+      width: 96%;
+      height: 60px;
+    }
+  }
+  /*--------------------------------- Tablet  --------------------------------*/
+  @media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .header-menu {
+      display: block;
+    }
+    .container-header__content {
+      display: none;
+    }
+    .form-search {
+      width: 320px;
+    }
+  
+    .container-header,
+    .container-footer {
+      width: 95%;
+    }
+  
+    .container-main {
+      width: 93%;
+    }
+  
+    .footer-contact {
+      width: 100%;
+    }
+  
+    .footer-category .l-4 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    .footer-category .l-8 {
+      flex: 0 0 50%;
+      max-width: 50%;
+      flex-wrap: wrap;
+    }
+  
+    .footer-category .l-8 .l-5 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .footer-category .l-8 .l-7 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .footer-about_us .l-1 {
+      flex: 0 0 14%;
+      max-width: 14%;
+    }
+  
+    .movie-list_1,
+    .movie-list_2 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-top: 0;
+    }
+  
+    .btn-detail {
+      width: 118px;
+    }
+  
+    .main-title {
+      font-size: 27px;
+    }
+  
+    .movie-content {
+      display: block;
+    }
+  
+    .main-movie_content .router-custom {
+      flex: 0 0 49.3%;
+      max-width: 49.3%;
+    }
+  
+    .movie-list__main_items,
+    .movie-card {
+      margin-bottom: 10px;
+    }
+    .movie-list_3 .main-movie_content .router-custom {
+      flex: 0 0 49.3%;
+      max-width: 49.3%;
+    }
+    .recommendFilm-list__items {
+      flex: 0 0 38%;
+    }
+  
+    .card-label {
+      top: 5px;
+      left: 5px;
+      padding: 5px 8px;
+    }
+    .container-main .row {
+      display: block;
+    }
+  
+    .nav_seemore {
+      display: block;
+    }
+  
+    .filter-group {
+      margin-bottom: 10px;
+    }
+  
+    .filter {
+      margin: 5px 5px 0 0;
+    }
+  
+    .btn-filter {
+      margin: 5px 0 0 0;
+    }
+  
+    .seemore-introduce {
+      padding: 5px 2px;
+    }
+  
+    .path {
+      padding: 5px 2px;
+    }
+  
+    .page-content {
+      padding: 5px;
+      margin: 10px 0;
+    }
+    .next-page__list {
+      width: 45%;
+    }
+  
+    .container-watch {
+      width: 95%;
+    }
+    .for-you_list__items {
+      flex: 0 0 32.8%;
+      max-width: 32.8%;
+    }
+  
+    .mini-card {
+      width: 70%;
+    }
+    .avt_fb {
+      width: 8%;
+      height: 65px;
+    }
+  
+    .form-cmt {
+      width: 91%;
+    }
+  
+    .txa_cmt {
+      width: 98%;
+      height: 60px;
+    }
+  }
+  /*--------------------------------- Laptop & PC -----------------------------*/
+  @media (min-width: 64em) and (max-width: 93.6875em) {
+    .header-menu {
+      display: block;
+    }
+    .container-header__content {
+      display: none;
+    }
+    .form-search {
+      width: 320px;
+    }
+  
+    .container-header,
+    .container-footer {
+      width: 90%;
+    }
+  
+    .container-main {
+      width: 90%;
+    }
+    .next-page__list {
+      width: 28%;
+    }
+  
+    .container-watch {
+      width: 75%;
+    }
+    .for-you_list__items {
+      flex: 0 0 32.8%;
+      max-width: 32.8%;
+    }
+  
+    .card-label {
+      top: 2px;
+      left: 2px;
+      padding: 3px 3px;
+    }
+    .card-title {
+      font-size: 15px;
+      padding: 6px 4px;
+    }
+    .avt_fb {
+      width: 8%;
+      height: 65px;
+    }
+  
+    .form-cmt {
+      width: 91%;
+    }
+  
+    .txa_cmt {
+      width: 98%;
+      height: 60px;
+    }
+    .header-mobile__content {
+      width: 90%;
+      text-align: center;
+      left: 5%;
+      right: 5%;
+    }
+    .close_menu {
+      top: 1px;
+      right: 1px;
+    }
+  }
+  
+  @media (min-width: 93.75em) {
+    .next-page__list {
+      width: 25%;
+    }
+  }
+  /* -------------------------------------- OUT --------------------------------------*/
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

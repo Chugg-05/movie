@@ -1,0 +1,396 @@
+.watch-card {
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .watch-overlay {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 0;
+  }
+  
+  .mini-card {
+    width: 60%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 10px;
+    left: 10px;
+    z-index: 2;
+  }
+  
+  .mini-card img {
+    width: 40%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+  
+  .mini-content {
+    width: 57%;
+    color: #fff;
+    align-content: end;
+  }
+  .mini-content h1 {
+    margin: 0;
+    font-weight: 100;
+  }
+  .mini-content p {
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .btn-trailer {
+    color: #fff;
+    padding: 10px 13px;
+    margin-right: 6px;
+    background-color: #3192d3;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn-watch {
+    color: #fff;
+    padding: 10px 13px;
+    background-color: #d33131;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn-trailer:hover {
+    background-color: #52add1;
+  }
+  .btn-watch:hover {
+    background-color: #d15050;
+  }
+  
+  .images {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .btn-play_watch {
+    position: absolute;
+    top: 46%;
+    left: 47%;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 165, 0, 0.55);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .btn-play_watch::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 15px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transform: translateX(2px);
+  }
+  
+  .watch-content {
+    background-color: #252525;
+    padding: 15px 10px;
+    margin-top: 15px;
+  }
+  
+  .episode-list {
+    background-color: #333;
+    padding: 15px 10px;
+    border-radius: 5px;
+  }
+  
+  .epsode-title {
+    color: yellow;
+  }
+  
+  .epsode-list_items {
+    display: flex;
+    margin: 20px 0 0 0;
+    padding: 0 10px;
+    color: #fff;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .epsode-items {
+    width: 30px;
+    height: 30px;
+    background-color: #444;
+    text-align: center;
+    align-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .epsode-items:hover {
+    background-color: #f28705;
+  }
+  
+  .like_share {
+    margin: 15px 0;
+  }
+  
+  .btn-like,
+  .btn-share {
+    color: #fff;
+    background-color: #3078fd;
+    border: none;
+    padding: 3px 10px;
+    border-radius: 3px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .vote {
+    display: flex;
+    color: #cec9c9;
+    flex-wrap: nowrap;
+    gap: 4px;
+  }
+  
+  .star {
+    cursor: pointer;
+  }
+  
+  .star:hover {
+    color: #f28705;
+  }
+  
+  .likes {
+    margin-left: 7px;
+  }
+  
+  .movie-detail {
+    display: flex;
+    color: white;
+    font-size: 15px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+  }
+  
+  .movie-detail_col {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  
+  .lable_movie-detail {
+    font-weight: bold;
+  }
+  
+  .movie-detail_col p {
+    margin: 8px 0;
+  }
+  .quality-quality {
+    color: black;
+    background-color: #e3b71e;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .title-content {
+    font-weight: bold;
+    color: #f28705;
+    font-size: 18px;
+    padding: 3px 0;
+  }
+  
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 15px 0 20px 0;
+  }
+  
+  .tag-items {
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #777;
+    background-color: #444;
+  }
+  
+  .tag-items:hover {
+    color: #fff;
+    background-color: #f28705;
+  }
+  .main-comment {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 20px 0;
+  }
+  
+  .main-comment_content {
+    padding: 12px;
+  }
+  .h_comment {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .select_comment {
+    padding: 4px;
+    background-color: #f5f6f7;
+  }
+  
+  .select_comment_items {
+    font-weight: bold;
+  }
+  
+  .m-comment {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+  
+  .avt_fb {
+    width: 6%;
+    height: 65px;
+  }
+  
+  .form-cmt {
+    width: 93%;
+    display: block;
+    text-align: right;
+  }
+  
+  .txa_cmt {
+    width: 99%;
+    height: 60px;
+    font-size: 14px;
+    padding: 2px 5px;
+    outline: none;
+  }
+  
+  .btn-upload_cmt {
+    color: #fff;
+    background-color: #3078fd;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px 0;
+    outline: none;
+  }
+  
+  .f-comment_content {
+    font-size: 14px;
+    color: #3078fd;
+    cursor: pointer;
+  }
+  /* -------------------- */
+  .for-you {
+    margin: 20px 0;
+  }
+  
+  .for-you_list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .for-you_list__items {
+    flex: 0 0 24.5%;
+    max-width: 24.5%;
+  }
+  
+  .movie-card {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 8px;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 0;
+  }
+  
+  .card-label {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    z-index: 2;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image:hover {
+    transform: scale(1.2);
+  }
+  
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 8px;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 165, 0, 0.9);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .movie-card:hover .play-button {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .play-button::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 15px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transform: translateX(2px);
+  }  

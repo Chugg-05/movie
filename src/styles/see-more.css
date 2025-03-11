@@ -1,0 +1,84 @@
+.nav_seemore {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .filter-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter {
+    padding: 6px 8px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #666;
+    border: 1px solid black;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .btn-filter {
+    width: 80px;
+    color: #fff;
+    background-color: #f28705;
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .seemore-introduce {
+    color: #fff;
+    padding: 5px 8px;
+    background-color: #333;
+  }
+  
+  .path {
+    color: #fff;
+    background-color: #262626;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .page-content {
+    padding: 15px 10px;
+    color: #fff;
+    background-color: #444;
+    margin: 20px 0 35px 0;
+  }
+  
+  .next-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .next-page__list {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .btn-next_page {
+    width: 30px;
+    height: 30px;
+    background-color: #444;
+    color: white;
+    align-content: center;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid #444;
+  }
+  
+  .btn-next_page:hover {
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+  }
+  
+  .filter-group_list-1,
+  .filter-group_list-2 {
+    display: flex;
+  }

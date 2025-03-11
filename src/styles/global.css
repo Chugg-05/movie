@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Tahoma;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #333;
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #080808;
+  }
+  
+  .container-minor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #1a1a1a;
+  }
+  
+  .container-main {
+    width: 75%;
+  }
+  
+  .container-watch {
+    width: 55%;
+  }
+  
+  .row {
+    display: flex;
+  }
+  .center {
+    justify-content: center;
+  }
+  .between {
+    justify-content: space-between;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    color: #f28705;
+    cursor: pointer;
+  }
+  
+  .horizontal-lines {
+    border: none;
+    height: 1px;
+    background-color: #9e9d9d;
+  }
+  
+  .red-lines {
+    color: red;
+  }
+  .yellow-lines {
+    color: yellow;
+  }
+  
+  .gray-lines {
+    color: #777;
+  }
+  
+  .router-custom {
+    text-decoration: none;
+    color: #fff;
+  }
