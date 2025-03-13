@@ -4,6 +4,7 @@ import {
   AiOutlineMail,
   AiOutlinePhone,
 } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import "../../styles/main.css";
 const Outstanding = () => {
   return (
@@ -11,57 +12,57 @@ const Outstanding = () => {
       <div className="footer-movie l-8">
         <div className="row l-5">
           <div className="footer-new_movie l-6 m-6">
-            <a className="router-custom" href="/see-more">
+            <Link className="router-custom" to="/see-more">
               <p className="footer-title">Phim mới</p>
-            </a>
+            </Link>
             <div className="footer-list">
-              <a className="router-custom" href="/see-more">
+              <Link className="router-custom" to="/see-more">
                 <div className="footer-list__items">Phim chiếu rạp</div>
-              </a>
-              <a className="router-custom" href="/see-more">
+              </Link>
+              <Link className="router-custom" to="/see-more">
                 <div className="footer-list__items">Phim lẻ</div>
-              </a>
-              <a className="router-custom" href="/see-more">
+              </Link>
+              <Link className="router-custom" to="/see-more">
                 <div className="footer-list__items">Phim bộ</div>
-              </a>
-              <a className="router-custom" href="/see-more">
+              </Link>
+              <Link className="router-custom" to="/see-more">
                 <div className="footer-list__items">Phim hành động</div>
-              </a>
-              <a className="router-custom" href="/see-more">
+              </Link>
+              <Link className="router-custom" to="/see-more">
                 <div className="footer-list__items">Phim viễn tưởng</div>
-              </a>
-              <a className="router-custom" href="/see-more">
+              </Link>
+              <Link className="router-custom" to="/see-more">
                 <div className="footer-list__items">Phim tâm lý</div>
-              </a>
-              <a className="router-custom" href="/see-more">
+              </Link>
+              <Link className="router-custom" to="/see-more">
                 <div className="footer-list__items">Phim hài</div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="footer-good_movie l-6 m-6">
             <p className="footer-title">Phim hay</p>
             <div className="footer-list">
-              <a className="router-custom" href="/see-more">
+              <Link className="router-custom" to="/see-more">
                 <div className="footer-list__items">Phim Mỹ</div>
-              </a>
-              <a className="router-custom" href="/see-more">
+              </Link>
+              <Link className="router-custom" to="/see-more">
                 <div className="footer-list__items">Phim Hàn Quốc</div>
-              </a>
-              <a className="router-custom" href="/see-more">
+              </Link>
+              <Link className="router-custom" to="/see-more">
                 <div className="footer-list__items">Phim Trung Quốc</div>
-              </a>
-              <a className="router-custom" href="/see-more">
+              </Link>
+              <Link className="router-custom" to="/see-more">
                 <div className="footer-list__items">Phim Thái Lan</div>
-              </a>
-              <a className="router-custom" href="/see-more">
+              </Link>
+              <Link className="router-custom" to="/see-more">
                 <div className="footer-list__items">Phim Việt Nam</div>
-              </a>
-              <a className="router-custom" href="/see-more">
+              </Link>
+              <Link className="router-custom" to="/see-more">
                 <div className="footer-list__items">Phim Ma kinh</div>
-              </a>
-              <a className="router-custom" href="/see-more">
+              </Link>
+              <Link className="router-custom" to="/see-more">
                 <div className="footer-list__items">Phim hoạt hình</div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

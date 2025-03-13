@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../../styles/main.css";
 
 const Introduce = () => {
@@ -5,18 +6,18 @@ const Introduce = () => {
     <>
       <div className="seemore-introduce">
         <div className="path">
-          <a className="router-custom" href="/">
+          <Link className="router-custom" to="/">
             <span className="highlight">
               <i className="fa-solid fa-house-chimney"></i> Phim Mới {`>`}
             </span>
-          </a>
+          </Link>
           <span> Phim chiếu rạp</span>
         </div>
         <div className="page-content">
           Khám phá danh sách
-          <a className="router-custom" href="/see-more">
+          <Link className="router-custom" to="/see-more">
             <span className="highlight">Phim Chiếu Rạp</span>
-          </a>
+          </Link>
           mới và hot nhất, được cập nhật thường xuyên trên phimmoichill net.
           Thưởng thức và tải về hơn 100.000+ bộ phim bộ Vietsub, thuyết minh
           đang nổi bật và được yêu thích nhất tháng 1 năm 2025.

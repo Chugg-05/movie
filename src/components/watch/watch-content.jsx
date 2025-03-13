@@ -1,4 +1,5 @@
 import { FaDatabase, FaShareAlt, FaStar, FaThumbsUp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "../../styles/main.css";
 
 const WatchContent = () => {
@@ -10,111 +11,111 @@ const WatchContent = () => {
             <FaDatabase /> Danh sách tập #Hà Nội (Vietsub)
           </div>
           <div className="epsode-list_items">
-            <a className="router-custom" href="/watch">
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">1</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">2</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">3</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">4</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">5</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">6</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">7</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">8</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">9</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">10</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">11</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">12</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">13</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">14</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">15</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">16</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">17</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">18</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">19</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">20</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">21</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">22</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">23</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">24</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">25</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">26</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">27</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">28</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">29</div>
-            </a>
-            <a className="router-custom" href="/watch">
+            </Link>
+            <Link className="router-custom" to="/watch">
               <div className="epsode-items">30</div>
-            </a>
+            </Link>
           </div>
           <hr className="horizontal-lines" />
         </div>
 
         <div className="like_share">
-          <a className="router-custom" href="/watch">
+          <Link className="router-custom" to="/watch">
             <button className="btn-like">
               <FaThumbsUp /> Thích <label>0</label>
             </button>
-          </a>
-          <a className="router-custom" href="/watch">
+          </Link>
+          <Link className="router-custom" to="/watch">
             <button className="btn-share">
               <FaShareAlt /> Chia sẻ
             </button>
-          </a>
+          </Link>
         </div>
 
         <div className="vote">

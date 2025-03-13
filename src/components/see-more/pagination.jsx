@@ -1,4 +1,5 @@
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "../../styles/main.css";
 
 const Pagination = () => {
@@ -6,31 +7,31 @@ const Pagination = () => {
     <>
       <div className="next-page">
         <div className="next-page__list">
-          <a className="router-custom" href="/see-more">
+          <Link className="router-custom" to="/see-more">
             <div className="btn-next_page">
               <FaChevronLeft />
             </div>
-          </a>
-          <a className="router-custom" href="/see-more">
+          </Link>
+          <Link className="router-custom" to="/see-more">
             <div className="btn-next_page">1</div>
-          </a>
-          <a className="router-custom" href="/see-more">
+          </Link>
+          <Link className="router-custom" to="/see-more">
             <div className="btn-next_page">2</div>
-          </a>
-          <a className="router-custom" href="/see-more">
+          </Link>
+          <Link className="router-custom" to="/see-more">
             <div className="btn-next_page">3</div>
-          </a>
-          <a className="router-custom" href="/see-more">
+          </Link>
+          <Link className="router-custom" to="/see-more">
             <div className="btn-next_page">...</div>
-          </a>
-          <a className="router-custom" href="/see-more">
+          </Link>
+          <Link className="router-custom" to="/see-more">
             <div className="btn-next_page">99</div>
-          </a>
-          <a className="router-custom" href="/see-more">
+          </Link>
+          <Link className="router-custom" to="/see-more">
             <div className="btn-next_page">
               <FaChevronRight />
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </>

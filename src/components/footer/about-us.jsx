@@ -6,40 +6,41 @@ import {
   AiFillYoutube,
 } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 import "../../styles/main.css";
 const AboutUs = () => {
   return (
     <>
       <div className="footer-about_us row">
         <div className="l-1">
-          <a className="router-custom" href="/">
+          <Link className="router-custom" to="/">
             <AiFillFacebook />
-          </a>
+          </Link>
         </div>
         <div className="l-1">
-          <a className="router-custom" href="/">
+          <Link className="router-custom" to="/">
             <AiFillInstagram />
-          </a>
+          </Link>
         </div>
         <div className="l-1">
-          <a className="router-custom" href="/">
+          <Link className="router-custom" to="/">
             <AiFillYoutube />
-          </a>
+          </Link>
         </div>
         <div className="l-1">
-          <a className="router-custom" href="/">
+          <Link className="router-custom" to="/">
             <AiFillTikTok />
-          </a>
+          </Link>
         </div>
         <div className="l-1">
-          <a className="router-custom" href="/">
+          <Link className="router-custom" to="/">
             <AiFillTwitterCircle />
-          </a>
+          </Link>
         </div>
         <div className="l-1">
-          <a className="router-custom" href="/">
+          <Link className="router-custom" to="/watch">
             <FaTelegram />
-          </a>
+          </Link>
         </div>
       </div>
     </>

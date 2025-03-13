@@ -1,15 +1,16 @@
 import { FaHouseChimney } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Path = () => {
   return (
     <>
       <div className="path">
-        <a className="router-custom" href="/see-more">
+        <Link className="router-custom" to="/see-more">
           <span className="highlight">
             <FaHouseChimney /> Phim Mới {`>`} Phim Chiếu Rạp
             {` > `}
           </span>
-        </a>
+        </Link>
         <span>Thục Cẩm Vân Gia</span>
       </div>
     </>
